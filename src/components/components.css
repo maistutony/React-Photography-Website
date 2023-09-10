@@ -4,7 +4,19 @@
 }
 
 .navbar-brand {
+    color: #226089 !important;
     margin-left: 16px;
+}
+
+.active {
+    font-weight: bold;
+    /* Example style for the active link */
+    color: #dfc6af;
+    /* Example color for the active link */
+}
+
+.Nav-link:hover {
+    color: #dfc6af;
 }
 
 .carousel {
@@ -34,7 +46,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: fit-content;
+    width: 350px;
+    text-align: start;
+    font-weight: 600;
 }
 
 .services-card {
@@ -51,8 +65,23 @@
     object-fit: cover;
 }
 
-.services-headline {
+.main-headline {
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    background: linear-gradient(45deg, rgba(234, 221, 220) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 75%, transparent 75%, transparent);
+    background-size: 10px 10px;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.cta-btn {
+    background-color: var(--cta);
 }
 
 /* featured section */
@@ -86,6 +115,15 @@
 
 .abt-body {
     height: fit-content;
+    background-color: var(--secondary);
+}
+
+.abt-text {
+    color: white;
+}
+
+.footer {
+    background-color: var(--secondary);
 }
 
 .abt-card {
@@ -115,33 +153,41 @@
     border-radius: 50%;
 }
 
-.testimonial-img-div {
-  
-}
+.testimonial-img-div {}
 
 .testimonial {
+    background-color: var(--secondary);
     position: relative;
-
+    border-radius: 12px;
+    padding: 16px 32px;
 }
 
 .testimonial::before {
     content: "❝";
     position: absolute;
-    top: -16px;
-    left: -24px;
+    top: -4px;
+    left: 3px;
     font-size: 32px;
-    color: blue;
+    color: var(--cta);
 }
 
 .testimonial::after {
     content: "❞";
     position: absolute;
-    top: -16px;
-    right: -16px;
+    top: -4px;
+    right: 3px;
     font-size: 32px;
-    color: blue;
+    color: var(--cta);
 }
 
+.testimonial-main {
+    padding: 32px 8px;
+    background-color: grey;
+}
+
+.booking-form {
+    background-color: #eaddd2;
+}
 
 /*Work Section*/
 .work-image {
@@ -187,5 +233,39 @@
 }
 
 .social-links {
-    padding: 8px 3px;
+    margin: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    /* CSS rules for screens greater than 768px */
+
+    .caption {
+        position: absolute;
+        top: 100px;
+        left: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 450px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    /* CSS rules for screens greater than 425px */
+
+    .caption {
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        font-weight: 600;
+        text-align: center;
+    }
 }

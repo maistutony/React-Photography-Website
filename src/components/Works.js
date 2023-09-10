@@ -15,33 +15,33 @@ function Works() {
     ];
   return (
     <Tabs
-      defaultActiveKey="profile"
+      defaultActiveKey="portraits"
       id="justify-tab-example"
       className="mb-3"
       justify
     >
-      <Tab eventKey="home" title="Portaits">
+      <Tab eventKey="portraits" title="Portaits">
         <Row>
           {potraits.map((item, index) => (
             <Image key={index} src={item} className="col-md-3 work-image" />
           ))}
         </Row>
       </Tab>
-      <Tab eventKey="profile" title="Retouched">
+      <Tab eventKey="retouched" title="Retouched">
         <Row>
           {potraits.map((item, index) => (
             <Image key={index} src={item} className="col-md-3 work-image" />
           ))}
         </Row>
       </Tab>
-      <Tab eventKey="longer-tab" title="Wedding">
+      <Tab  eventKey="wedding" title="Wedding Photographs">
         <Row>
           {potraits.map((item, index) => (
             <Image key={index} src={item} className="col-md-3 work-image" />
           ))}
         </Row>
       </Tab>
-      <Tab eventKey="contact" title="Products photographs">
+      <Tab eventKey="products" title="Products photographs">
         <Row>
           {potraits.map((item, index) => (
             <Image key={index} src={item} className="col-md-3 work-image" />

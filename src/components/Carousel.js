@@ -1,7 +1,9 @@
 import Carousel from "react-bootstrap/Carousel";
-import { Image,Button } from "react-bootstrap";
+import { Image, Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 
 function LandingCarousel() {
+  const navigate=useNavigate()
   return (
     <Carousel className="carousel">
       <Carousel.Item className="carousel-item">
@@ -12,12 +14,18 @@ function LandingCarousel() {
           className="slide-img"
         />
         <Carousel.Caption className="caption">
-          <div className="overlay"></div>
-          <h3 className="my-2">Elevating Professionalism</h3>
-          <p className="my-2">
+          <h3 className="my-2 ">Elevating Professionalism</h3>
+          <p className="my-2 ">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
-          <Button className="my-2">Book Session</Button>
+          <Button
+            className="cta-btn my-2"
+            onClick={() => {
+              navigate("/contacts");
+            }}
+          >
+            Book Session
+          </Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -28,12 +36,18 @@ function LandingCarousel() {
           className="slide-img"
         />
         <Carousel.Caption className="caption">
-          <div className="overlay"></div>
-          <h3 className="my-2">We create Experiences</h3>
+          <h3 className="my-2 ">We create Experiences</h3>
           <p className="my-2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <Button className="my-2">Get A Quote</Button>
+          <Button
+            className="cta-btn my-2"
+            onClick={() => {
+              navigate("/contacts");
+            }}
+          >
+            Get A Quote
+          </Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -44,12 +58,18 @@ function LandingCarousel() {
           className="slide-img"
         />
         <Carousel.Caption className="caption">
-          <div className="overlay"></div>
           <h3 className="my-2">We Capture Emotions</h3>
-          <p className="my-2">
+          <p className="my-2 ">
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
-          <Button className="my-2">Book Session</Button>
+          <Button
+            className="hero-btn cta-btn my-2"
+            onClick={() => {
+              navigate("/contacts");
+            }}
+          >
+            Book Session
+          </Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -4,7 +4,9 @@ import { Image,Row } from 'react-bootstrap';
 function Featured() {
   return (
     <>
-      <Row className="my-3 justify-content-center">Featured Works</Row>
+      <Row className="justify-content-center main-headline">
+        Featured Works
+      </Row>
       <div className="grid-container">
         <div className="grid-item">
           <Image

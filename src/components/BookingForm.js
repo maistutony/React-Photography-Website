@@ -23,7 +23,7 @@ const BookingForm = () => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="py-3">
+    <Form onSubmit={handleSubmit} className="p-3">
       <Form.Group controlId="name">
         <Form.Label>Name</Form.Label>
         <Form.Control

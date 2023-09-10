@@ -1,2 +1,15 @@
+:root {
+    --primary: #48859b;
+    --secondary: #dfc6af;
+    --cta: #226089;
+}
 
-  
+.headlines {
+    color: var(--primary);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+
+.quotes {
+    color: var(--cta);
+}

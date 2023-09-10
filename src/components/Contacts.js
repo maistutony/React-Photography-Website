@@ -35,22 +35,26 @@ function Contacts() {
           </Row>
         </Row>
 
-        <Row className="d-flex  align-items-stretc">
+        <Row className="d-flex booking-form">
           <div className="col-md-6" ref={firstColumnRef}>
             <BookingForm />
           </div>
-          <diV className="social-media col-md-6 justify-content-center align-items-center" ref={secondColumnRef}>
+          <diV
+            className="social-media col-md-6 align-items-center"
+            ref={secondColumnRef}
+          >
+            <Row>Follow Us On Social Media</Row>
             <div className="social-links">
-              Follow Us on <a href="#">facebook</a>
+              <a href="#">facebook</a>
             </div>
             <div className="social-links">
-              Follow Us on <a href="#">Twitter</a>
+              <a href="#">Twitter</a>
             </div>
             <div className="social-links">
-              Follow Us on <a href="#">Instagram</a>
+            <a href="#">Instagram</a>
             </div>
             <div className="social-links">
-              Follow Us on <a href="#">Dribble</a>
+              <a href="#">Dribble</a>
             </div>
           </diV>
         </Row>

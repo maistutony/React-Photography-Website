@@ -18,7 +18,7 @@ function GoogleMap() {
         defaultZoom={defaultProps.zoom}
         yesIWantToUseGoogleMapApiInternals
       >
-        <AnyReactComponent lat={59.955413} lng={30.337844} text="My Marker" />
+        <AnyReactComponent lat={-1.255014} lng={36.801741} text="My Marker" />
       </GoogleMapReact>
     </div>
   );

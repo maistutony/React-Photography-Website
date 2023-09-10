@@ -32,8 +32,10 @@ const responsive = {
 };
 
     return (
-        <>
-            <Row className='justify-content-center my-3'>Our Live Feeds From Instagram</Row>
+      <>
+        <Row className="justify-content-center main-headline">
+          Our Live Feeds From Instagram
+        </Row>
         <Carousel
           responsive={responsive}
           autoPlaySpeed={10000}
