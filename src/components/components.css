@@ -144,7 +144,10 @@
 
 /*About  testimonial Section*/
 .testimonial-card {
+    background-color: var(--secondary);
     display: flex;
+    border-radius: 12px;
+    margin: 16px 0;
 }
 
 .testimonial-img {
@@ -156,17 +159,16 @@
 .testimonial-img-div {}
 
 .testimonial {
-    background-color: var(--secondary);
     position: relative;
-    border-radius: 12px;
     padding: 16px 32px;
+
 }
 
 .testimonial::before {
     content: "❝";
     position: absolute;
     top: -4px;
-    left: 3px;
+    left: -3px;
     font-size: 32px;
     color: var(--cta);
 }
